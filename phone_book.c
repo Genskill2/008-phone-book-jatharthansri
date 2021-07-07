@@ -19,22 +19,22 @@ void list(FILE *);
 int delete(FILE *, char *);
 
 /* Utility functions  */
-FILE * open_db_file(); /* Opens the database file. Prints error and
-                          quits if it's not available */
-void print_usage(char *, char *);  /* Prints usage */
+FILE * open_db_file(); /*Opens the database file. Prints error and
+                          quits if it's not available*/
+void print_usage(char *, char *);  /*Prints usage*/
 entry *load_entries(FILE *);         /* Load all entries from the
                                       database file. Returns pointer
-                                      to first entry */
-entry *create_entry_node(char *, char *);  /* Create a new entry
+                                      to first entry*/
+entry *create_entry_node(char *, char *);  /*Create a new entry
                                               node. Has to be freed by
-                                              user. */
-void free_entries(entry *); /* TBD Given the first node of a linked list
-                               of entries, will free all the nodes */ 
+                                              user.*/
+void free_entries(entry *); /*TBD Given the first node of a linked list
+                               of entries, will free all the nodes*/ 
 
-void write_all_entries(entry *); /* Given the first node of a linked
+void write_all_entries(entry *); /*Given the first node of a linked
                                     list of entries, will delete the
                                     database file on the disk and save
-                                    the given entries into the file */
+                                    the given entries into the file*/
 
 
 int main(int argc, char *argv[]) {
